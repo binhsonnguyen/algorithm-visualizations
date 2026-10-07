@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Factorial</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Factorial</h1>
+
+<h2>Pseudocode</h2>
+<pre>FACTORIAL(n):
+    if n = 0 then
+        return 1
+    return n × FACTORIAL(n - 1)</pre>
+
+<h2>Data</h2>
+<p>
+  Number n:
+  <input type="number" id="n" value="5" min="0" max="12">
+  <button id="generate">Generate data</button>
+</p>
+<p>n = <code id="data">5</code></p>
+
+<h2>Animation</h2>
+<p>
+  <button id="run">Run</button>
+  <button id="next">Next step</button>
+  <button id="prev">Previous step</button>
+  <button id="reset">Back to start</button>
+</p>
+
+<div id="stage"></div>
+<p id="status"></p>
+
+<script src="factorial.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

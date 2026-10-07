@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Linear Search</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Linear Search</h1>
+
+<h2>Pseudocode</h2>
+<pre>LINEAR_SEARCH(a, n, x):
+    for i ← 0 to n - 1 do
+        if a[i] = x then
+            return i
+    return -1</pre>
+
+<h2>Data</h2>
+<p>
+  Array size:
+  <input type="number" id="size" value="8" min="1" max="15">
+  <button id="generate">Generate data</button>
+</p>
+<p>
+  Value to find x:
+  <input type="number" id="target" value="0">
+</p>
+<p>a = <span id="data"></span></p>
+
+<h2>Animation</h2>
+<p>
+  <button id="run">Run</button>
+  <button id="next">Next step</button>
+  <button id="prev">Previous step</button>
+  <button id="reset">Back to start</button>
+</p>
+
+<div id="stage"></div>
+<p id="status"></p>
+
+<script src="linear-search.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

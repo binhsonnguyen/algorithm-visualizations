@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bubble Sort</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Bubble Sort</h1>
+
+<h2>Pseudocode</h2>
+<pre>BUBBLE_SORT(a, n):
+    for i ← 0 to n - 2 do
+        swapped ← false
+        for j ← 0 to n - 2 - i do
+            if a[j] > a[j + 1] then
+                swap a[j] ↔ a[j + 1] ; swapped ← true
+        if swapped = false then return a
+    return a</pre>
+
+<h2>Data</h2>
+<p>
+  Array size:
+  <input type="number" id="size" value="8" min="4" max="12">
+  <button id="generate">Generate data</button>
+</p>
+<p>a = <span id="data"></span></p>
+
+<h2>Animation</h2>
+<p>
+  <button id="run">Run</button>
+  <button id="next">Next step</button>
+  <button id="prev">Previous step</button>
+  <button id="reset">Back to start</button>
+</p>
+
+<div id="stage"></div>
+<p id="status"></p>
+
+<script src="bubble-sort.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
